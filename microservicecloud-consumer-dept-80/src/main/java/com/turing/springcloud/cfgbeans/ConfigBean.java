@@ -1,4 +1,4 @@
-package com.turing.springcloud.cfgbean;
+package com.turing.springcloud.cfgbeans;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
