@@ -3,6 +3,7 @@
   <groupId>com.turing.springcloud</groupId>
   <artifactId>microservicecloud</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <description>springcloud project</description>
   <packaging>pom</packaging>
   
   <properties>
