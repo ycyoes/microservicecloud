@@ -64,6 +64,9 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<modules>
+		<module>microservicecloud-api</module>
+	</modules>
 </project>
 
 	
