@@ -3,6 +3,7 @@ package com.turing.springcloud.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,5 +33,11 @@ public class DeptController_Consumer {
 	@RequestMapping(value = "list")
 	public List<Dept> list() {
 		return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
+	}
+	
+	//测试@EnableDiscoveryClient,消费端可以调用服务发现
+	@RequestMapping(value = "discovery")
+	public Object discovery() {
+		return restTemplate.getForObject(REST_URL_PREFIX + "/dept/discovery", Object.class);
 	}
 }
