@@ -5,6 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.RoundRobinRule;
+
 @Configuration
 //boot --> spring applicationContext.xml --> @Configuration配置 =  applicationContext.xml
 public class ConfigBean {	
@@ -12,6 +16,11 @@ public class ConfigBean {
 	@LoadBalanced
 	public RestTemplate geTemplate() {
 		return new RestTemplate();
+	}
+	
+	@Bean
+	public IRule myRule() {
+		return new RandomRule();
 	}
 }
 
