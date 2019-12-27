@@ -19,7 +19,7 @@
 		</dependency>
 		<!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
 		<dependency>
-			<groupId>com.atguigu.springcloud</groupId>
+			<groupId>com.turing.springcloud</groupId>
 			<artifactId>microservicecloud-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>	    	
