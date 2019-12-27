@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>microservicecloud-provider-dept-hystrix-8001</artifactId>
-	<dependencies>
+<dependencies>
 		<!-- hystrix -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
